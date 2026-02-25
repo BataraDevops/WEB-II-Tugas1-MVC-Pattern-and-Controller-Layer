@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!-- Fragment: Navbar -->
+<nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" th:href="@{/}">Spring MVC Lab</a>
+        <div class="navbar-nav">
+            <a class="nav-link" th:href="@{/}">Home</a>
+            <a class="nav-link" th:href="@{/products}">Produk</a>
+            <a class="nav-link" th:href="@{/about}">About</a>
+            <a class="nav-link" th:href="@{/products/categories}">Category</a>
+            <a class="nav-link" th:href="@{/statistics}">Statistics</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Fragment: Footer -->
+<footer th:fragment="footer" class="bg-light text-center py-3 mt-5">
+    <div class="container">
+        <p class="text-muted mb-0">
+            Spring MVC Lab &copy; 2026 | WEB-202 Week 4
+        </p>
+    </div>
+</footer>
+
+</html>
